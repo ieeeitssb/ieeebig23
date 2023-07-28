@@ -14,28 +14,28 @@ export default function Footer() {
           <div className="flex pb-2">
             <a
               href="https://www.instagram.com/ieeeitssb/"
-              className="pr-3 hover:text-second"
+              className="pr-3 hover:text-teal-500"
               target="blank"
             >
               <BsInstagram />
             </a>
             <a
               href="https://github.com/ieeeitssb"
-              className="pr-3 hover:text-second"
+              className="pr-3 hover:text-teal-500"
               target="blank"
             >
               <BsGithub />
             </a>
             <a
               href="https://www.linkedin.com/company/ieee-its-sb/"
-              className="pr-3 hover:text-second"
+              className="pr-3 hover:text-teal-500"
               target="blank"
             >
               <BsLinkedin />
             </a>
             <a
               href="https://www.youtube.com/@ieeeitssb428"
-              className="pr-3 hover:text-second"
+              className="pr-3 hover:text-teal-500"
               target="blank"
             >
               <BsYoutube />
@@ -64,7 +64,7 @@ export default function Footer() {
               <a
                 href="mailto:ieee.sepuluhnopember@gmail.com"
                 target="blank"
-                className="hover:text-second"
+                className="hover:text-teal-500"
               >
                 ieee.sepuluhnopember@gmail.com
               </a>

@@ -1,15 +1,16 @@
 import React from "react";
-import Jumbotron from "./Homepage/Jumbotron";
-import Navbar from "./Component/Navbar";
-import About from "./Homepage/About";
-import Event from "./Homepage/Event";
+import MainHome from "./Homepage/MainHome";
+import MainBCC from "./BCC/MainBCC";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 export default function MainContent() {
   return (
     <section className="w-full min-h-screen">
-      <Navbar />
-      <Jumbotron />
-      <About />
-      <Event />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainHome />} />
+          <Route path="/event/bcc" element={<MainBCC />} />
+        </Routes>
+      </BrowserRouter>
     </section>
   );
 }
