@@ -1,16 +1,15 @@
 import React from "react";
 import { BsInstagram, BsLinkedin, BsYoutube, BsGithub } from "react-icons/bs";
-
-import footerImg from "../img/ieee-logo.png";
+import logo from "../img/logo_ieeebig.png";
 
 export default function Footer() {
   return (
     <footer id="contact">
-      <div className="bg-slate-500 flex md:flex-row px-5 py-10 md:p-0 sm:px-20 flex-col-reverse md:px-36">
-        <div className="py-5 basis-1/2 text-white  md:ml-14 md:p-10">
-          <img src={footerImg} alt="ieee img" width={300} />
+      <div className="flex bg-slate-200 dark:bg-blue-950 md:flex-row px-5 py-10 md:p-0 sm:px-20 flex-col-reverse md:px-36">
+        <div className="py-5 basis-1/2 text-black dark:text-white md:ml-14 md:p-10">
+          <img src={logo} alt="ieee img" width={150} />
           <p className="py-3 font-extrabold uppercase tracking-widest ">
-            IEEE ITS SB
+            IEEEBIG 2023
           </p>
           <div className="flex pb-2">
             <a
@@ -49,7 +48,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="text-white basis-1/2 md:p-10">
+        <div className="text-black dark:text-white basis-1/2 md:p-10">
           <div>
             <p className="font-bold">Our Address</p>
             <p>

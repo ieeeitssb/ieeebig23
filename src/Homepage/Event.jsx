@@ -5,7 +5,7 @@ import logoTemp from "../img/logo_ieeebig.png";
 
 export default function Event() {
   return (
-    <section className="py-20 bg-slate-100">
+    <section className="py-20 bg-slate-100 dark:bg-slate-900">
       <h1 className="text-3xl font-bold text-black dark:text-white text-center mt-10 uppercase tracking-wide mb-3">
         What's in IEEE BIG 2023
       </h1>

@@ -3,7 +3,7 @@ import React from "react";
 export default function CardEvent(props) {
   return (
     <div
-      className={`bg-green-100 py-5 mb-8 flex flex-col rounded-2xl ${
+      className={`bg-green-100 py-5 dark:bg-slate-500 dark:text-white mb-8 flex flex-col rounded-2xl ${
         props.reverse === "true" ? "md:flex-row-reverse" : "md:flex-row"
       }`}
     >
