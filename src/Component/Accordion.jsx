@@ -31,7 +31,7 @@ export default function Accordion(props) {
       </div>
       <div
         className={`duration-500 px-5 bg-slate-200 dark:text-white dark:bg-blue-950 rounded-b-lg transition-all ${
-          open ? "py-5" : "h-0"
+          open ? "py-5 h-[100px] overflow-y-auto" : "h-0"
         } overflow-hidden transition`}
       >
         <p>{props.answer}</p>
