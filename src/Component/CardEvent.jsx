@@ -15,7 +15,7 @@ export default function CardEvent(props) {
         <p className="py-2">{props.description}</p>
         <div className="py-4 mt-2">
           <a
-            href="/"
+            href={props.link}
             className="bg-gradient-to-r from-purple-600 to-pink-500 px-4 hover:opacity-80 py-2 font-medium rounded-2xl"
           >
             See more

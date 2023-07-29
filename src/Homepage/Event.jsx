@@ -19,6 +19,7 @@ export default function Event() {
               adipisicing elit. Minima ex distinctio soluta dolorem eligendi
               voluptate."
           reverse="false"
+          link="/events/iip"
         />
 
         <CardEvent
@@ -28,6 +29,7 @@ export default function Event() {
               adipisicing elit. Minima ex distinctio soluta dolorem eligendi
               voluptate."
           reverse="true"
+          link="/events/bcc"
         />
 
         <CardEvent
@@ -37,6 +39,7 @@ export default function Event() {
               adipisicing elit. Minima ex distinctio soluta dolorem eligendi
               voluptate."
           reverse="false"
+          link="/events/companyfair"
         />
       </div>
     </section>
