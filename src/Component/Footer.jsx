@@ -5,7 +5,7 @@ import logo from "../img/logo_ieeebig.png";
 export default function Footer() {
   return (
     <footer id="contact">
-      <div className="flex bg-slate-200 dark:bg-blue-950 md:flex-row px-5 py-10 md:p-0 sm:px-20 flex-col-reverse md:px-36">
+      <div className="flex font-oswald bg-slate-200 dark:bg-blue-950 md:flex-row px-5 py-10 md:p-0 sm:px-20 flex-col-reverse md:px-36">
         <div className="py-5 basis-1/2 text-black dark:text-white md:ml-14 md:p-10">
           <img src={logo} alt="ieee img" width={150} />
           <p className="py-3 font-extrabold uppercase tracking-widest ">

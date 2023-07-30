@@ -3,7 +3,7 @@ import logo from "../img/background_ieeebig.png";
 
 export default function About() {
   return (
-    <section className="w-full min-h-[600px] bg-light dark:bg-dark bg-cover p-10">
+    <section className="w-full min-h-[600px] bg-light dark:bg-dark bg-cover font-oswald p-10">
       <div className="container">
         <h1 className="text-3xl font-bold text-black dark:text-white text-center mt-10 uppercase tracking-wide mb-3">
           About IEEE BIG
@@ -20,14 +20,18 @@ export default function About() {
             </div>
             <div className="w-full mb-10 md:w-1/2">
               <p className="text-base text-justify lg:text-xl dark:text-white">
-                IEEE Institut Teknologi Sepuluh Nopember (IEEE ITS SB) is a
-                Student Branch from IEEE that provides opportunities to meet and
-                learn from fellow IEEE Student and Graduate Student Members and
-                engage with professional IEEE members locally. An active IEEE
-                Student Branch can be one of the most positive elements of your
-                academic career, offering programs, activities, and professional
-                networking opportunities that build critical skills outside of
-                the classroom.
+                With the theme "TechnoSustainable: Empowering a BIG Future"
+                IEEEBIG 2023 introduces interesting approach to educating the
+                general public about technology. Therefore, all events and
+                activities organized as part of IEEEBIG 2023 are not solely
+                intended for the participants, but also expected as a
+                significant step to involve everyone to advance technology based
+                on sustainability. Therefore, it cannot be recalled if today's
+                humans cannot be separated from technology by considering all
+                aspects of sustainability, IEEEBIG 2023 is here as an initiative
+                innovative which aims to prepare competent individuals for
+                thrive in a competitive and sustainable technology sector.
+                IEEEBIG 2023 consists of series
               </p>
             </div>
           </div>

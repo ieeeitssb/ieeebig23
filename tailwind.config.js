@@ -10,6 +10,10 @@ module.exports = {
         dark: "url(../src/img/background-dark.png)",
         light: "url(../src/img/background-light.png)",
       },
+      fontFamily: {
+        monoton: ["Monoton"],
+        oswald: ["Oswald"],
+      },
     },
   },
   plugins: [require("tailwind-scrollbar")],

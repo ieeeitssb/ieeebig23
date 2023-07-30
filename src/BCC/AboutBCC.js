@@ -3,7 +3,7 @@ import Accordion from "../Component/Accordion";
 
 export default function AboutBCC() {
   return (
-    <section className="w-full p-5 min-h-[600px] bg-light dark:bg-dark bg-cover">
+    <section className="w-full p-5 min-h-[600px] bg-light dark:bg-dark bg-cover font-oswald">
       <div className="container">
         <h1 className="text-center uppercase text-slate-900 dark:text-white text-3xl font-semibold">
           About

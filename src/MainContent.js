@@ -6,7 +6,7 @@ import MainIIP from "./IIP/MainIIP";
 import MainCF from "./CompanyFair/MainCF";
 export default function MainContent() {
   return (
-    <section className="w-full min-h-screen">
+    <section className="w-full min-h-screen selection:text-teal-500">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainHome />} />

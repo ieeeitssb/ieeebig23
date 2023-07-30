@@ -2,8 +2,8 @@ import React from "react";
 import Timeline from "../Component/Timeline";
 export default function TimelineBCC() {
   return (
-    <section className="w-full min-h-screen p-5 bg-light bg-cover dark:bg-dark">
-      <h1 className="text-center uppercase text-slate-900 dark:text-white text-3xl font-semibold">
+    <section className="w-full min-h-screen p-5 bg-light bg-cover dark:bg-dark font-oswald">
+      <h1 className="text-center uppercase text-slate-900 dark:text-white text-3xl font-semibold font-oswald">
         Timeline
       </h1>
       <hr className="w-[250px] border-t-4 border-teal-600 mx-auto mt-5" />

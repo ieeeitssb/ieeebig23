@@ -26,61 +26,61 @@ export default function Navbar() {
   }
   return (
     <header>
-      <div className="fixed z-[100] h-20 w-full bg-slate-200 dark:bg-blue-950 dark:shadow-slate-800 shadow-xl">
+      <div className="fixed z-[100] font-oswald h-20 w-full bg-slate-200 dark:bg-blue-950 dark:shadow-slate-800 shadow-xl">
         <div className="flex h-full w-full items-center justify-between px-5 2xl:px-16">
           <a href="/">
             <h1 className="text-black dark:text-white text-3xl font-bold">
               <img src={logo} className="w-[50px] rounded-full" alt="gambar" />
             </h1>
           </a>
-          <div>
-            <ul className="hidden font-medium text-black dark:text-white lg:flex">
-              <a href="/">
-                <li className="ml-10 text-sm uppercase hover:text-teal-600">
-                  Home
-                </li>
-              </a>
-              <a href="#about" scroll={false}>
-                <li className="ml-10 text-sm uppercase hover:text-teal-600">
-                  About
-                </li>
-              </a>
-              <a href="/events" scroll={false}>
-                <li className="ml-10 text-sm uppercase hover:text-teal-600">
-                  Events
-                </li>
-              </a>
-              <a href="/teams" scroll={false}>
-                <li className="ml-10 text-sm uppercase hover:text-teal-600">
-                  Teams
-                </li>
-              </a>
-              <a href="https://ieeebig.000webhostapp.com/" scroll={false}>
-                <li className="ml-10 text-sm uppercase hover:text-teal-600">
-                  Login
-                </li>
-              </a>
-              <li className="ml-10">
-                <div
-                  className="cursor-pointer"
-                  onClick={() => {
-                    setDarkMode(!darkMode);
-                    if (darkMode) {
-                      toDarkMode();
-                    } else {
-                      toLightMode();
-                    }
-                  }}
-                >
-                  {darkMode ? <BsSunFill /> : <BsMoonFill />}
-                </div>
-              </li>
-            </ul>
+          <div className="flex gap-4 items-center">
+            <div className="">
+              <ul className="hidden font-medium text-black dark:text-white lg:flex">
+                <a href="/">
+                  <li className="ml-10 text-sm uppercase hover:text-teal-600">
+                    Home
+                  </li>
+                </a>
+                <a href="#about" scroll={false}>
+                  <li className="ml-10 text-sm uppercase hover:text-teal-600">
+                    About
+                  </li>
+                </a>
+                <a href="/events" scroll={false}>
+                  <li className="ml-10 text-sm uppercase hover:text-teal-600">
+                    Events
+                  </li>
+                </a>
+                <a href="/teams" scroll={false}>
+                  <li className="ml-10 text-sm uppercase hover:text-teal-600">
+                    Teams
+                  </li>
+                </a>
+                <a href="https://ieeebig.000webhostapp.com/" scroll={false}>
+                  <li className="ml-10 text-sm uppercase hover:text-teal-600">
+                    Login
+                  </li>
+                </a>
+              </ul>
+              <div
+                onClick={handleNav}
+                className="text-black dark:text-white lg:hidden cursor-pointer"
+              >
+                <AiOutlineMenu size={25} />
+              </div>
+            </div>
             <div
-              onClick={handleNav}
-              className="text-black dark:text-white lg:hidden cursor-pointer"
+              className="cursor-pointer dark:text-white"
+              onClick={() => {
+                setDarkMode(!darkMode);
+                if (darkMode) {
+                  toDarkMode();
+                } else {
+                  toLightMode();
+                }
+              }}
             >
-              <AiOutlineMenu size={25} />
+              {darkMode ? <BsSunFill /> : <BsMoonFill />}
             </div>
           </div>
         </div>

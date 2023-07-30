@@ -5,7 +5,7 @@ import logoTemp from "../img/logo_ieeebig.png";
 
 export default function Event() {
   return (
-    <section className="py-20 bg-light bg-cover bg-center dark:bg-dark">
+    <section className="py-20 bg-light bg-cover bg-center dark:bg-dark font-oswald tracking-wider">
       <h1 className="md:text-3xl text-xl font-bold text-black dark:text-white text-center mt-10 uppercase tracking-wide mb-3">
         What's in IEEE BIG 2023
       </h1>
@@ -15,9 +15,7 @@ export default function Event() {
         <CardEvent
           logo={logoTemp}
           title="IEEE Innovation Project (IIP)"
-          description="Deskripsi singkat: Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Minima ex distinctio soluta dolorem eligendi
-              voluptate."
+          description='Description: In this context, IEEE Innovation Project Competition exists as a platform that encourages participants to design and develop new innovations with the theme "TechnoSustainable: Empowering a BIG Future"'
           reverse="false"
           link="/events/iip"
         />
@@ -25,9 +23,7 @@ export default function Event() {
         <CardEvent
           logo={logoTemp}
           title="Business Case Competition (BCC)"
-          description="Deskripsi singkat: Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Minima ex distinctio soluta dolorem eligendi
-              voluptate."
+          description='Description: In this context, IEEE The Business Case Competition exists as a platform that encourages participants to develop innovations and business solutions focused on thematic areas of technology "Technological Solutions for Sustainable Development"'
           reverse="true"
           link="/events/bcc"
         />
@@ -35,9 +31,7 @@ export default function Event() {
         <CardEvent
           logo={logoTemp}
           title="Company Fair"
-          description="Deskripsi singkat: Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Minima ex distinctio soluta dolorem eligendi
-              voluptate."
+          description="Description: Company Fair is an IEEE program that focuses on discussions with professional companies on topics related to technology. This discussion is expected to be a reference for students regarding the professional worldview that will be faced later."
           reverse="false"
           link="/events/companyfair"
         />
