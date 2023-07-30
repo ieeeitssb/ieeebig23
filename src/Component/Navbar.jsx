@@ -8,19 +8,22 @@ export default function Navbar() {
   const handleNav = () => {
     setNav(!nav);
   };
-  const [darkMode, setDarkMode] = useState(false);
-  const handleToggle = () => {
+  const [darkMode, setDarkMode] = useState(
+    !(localStorage.getItem("theme") === "dark") ? true : false
+  );
+  const html = document.querySelector("html");
+  const toDarkMode = () => {
+    html.classList.add("dark");
     localStorage.setItem("theme", "dark");
-    setDarkMode(!darkMode);
-    const html = document.querySelector("html");
-    if (!darkMode) {
-      html.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      html.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
   };
+  const toLightMode = () => {
+    html.classList.remove("dark");
+    localStorage.setItem("theme", "light");
+  };
+  const selectedTheme = localStorage.getItem("theme");
+  if (selectedTheme === "dark") {
+    toDarkMode();
+  }
   return (
     <header>
       <div className="fixed z-[100] h-20 w-full bg-slate-200 dark:bg-blue-950 dark:shadow-slate-800 shadow-xl">
@@ -58,8 +61,18 @@ export default function Navbar() {
                 </li>
               </a>
               <li className="ml-10">
-                <div className="cursor-pointer" onClick={handleToggle}>
-                  {!darkMode ? <BsSunFill /> : <BsMoonFill />}
+                <div
+                  className="cursor-pointer"
+                  onClick={() => {
+                    setDarkMode(!darkMode);
+                    if (darkMode) {
+                      toDarkMode();
+                    } else {
+                      toLightMode();
+                    }
+                  }}
+                >
+                  {darkMode ? <BsSunFill /> : <BsMoonFill />}
                 </div>
               </li>
             </ul>
