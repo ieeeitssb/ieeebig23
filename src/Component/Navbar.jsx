@@ -70,7 +70,7 @@ export default function Navbar() {
               </div>
             </div>
             <div
-              className="cursor-pointer dark:text-white"
+              className="cursor-pointer dark:text-white transition-all duration-500"
               onClick={() => {
                 setDarkMode(!darkMode);
                 if (darkMode) {
