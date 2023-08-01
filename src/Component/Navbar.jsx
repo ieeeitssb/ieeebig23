@@ -46,7 +46,7 @@ export default function Navbar() {
                     About
                   </li>
                 </a>
-                <a href="/events" scroll={false}>
+                <a href="#events" scroll={false}>
                   <li className="ml-10 text-sm uppercase hover:text-teal-600">
                     Events
                   </li>

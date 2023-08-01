@@ -3,7 +3,10 @@ import logo from "../img/background_ieeebig.png";
 
 export default function About() {
   return (
-    <section className="w-full min-h-[600px] bg-light dark:bg-dark bg-cover font-oswald p-10">
+    <section
+      id="about"
+      className="w-full min-h-[600px] bg-light dark:bg-dark bg-cover font-oswald p-10"
+    >
       <div className="container">
         <h1 className="text-3xl font-bold text-black dark:text-white text-center mt-10 uppercase tracking-wide mb-3">
           About IEEE BIG
