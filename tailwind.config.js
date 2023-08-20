@@ -14,6 +14,10 @@ module.exports = {
         monoton: ["Monoton"],
         oswald: ["Oswald"],
       },
+      backgroundColor: {
+        hoverCard: "rgba(0,0,0,.5)",
+        hoverCardDark: "rgba(226,232,240,.5)",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar")],

@@ -51,7 +51,7 @@ export default function Navbar() {
                     Events
                   </li>
                 </a>
-                <a href="/teams" scroll={false}>
+                <a href="/" scroll={false}>
                   <li className="ml-10 text-sm uppercase hover:text-teal-600">
                     Teams
                   </li>
@@ -122,10 +122,10 @@ export default function Navbar() {
                 <a href="/events" scroll={false}>
                   <li className="py-4 text-sm hover:text-teal-600">Events</li>
                 </a>
-                <a href="/teams" scroll={false}>
+                <a href="/" scroll={false}>
                   <li className="py-4 text-sm hover:text-teal-600">Teams</li>
                 </a>
-                <a href="/teams" scroll={false}>
+                <a href="/" scroll={false}>
                   <li className="py-4 text-sm hover:text-teal-600">Login</li>
                 </a>
               </ul>
