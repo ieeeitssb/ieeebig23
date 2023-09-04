@@ -9,7 +9,7 @@ export default function Event() {
       id="events"
       className="py-20 bg-light bg-cover bg-center dark:bg-dark font-oswald tracking-wider"
     >
-      <h1 className="md:text-3xl text-xl font-bold text-black dark:text-white text-center mt-10 uppercase tracking-wide mb-3">
+      <h1 className="md:text-3xl text-xl font-bold dark:text-white text-center mt-10 uppercase tracking-wide mb-3">
         What's in IEEE BIG 2023
       </h1>
       <hr className="border-t-4 w-[250px] md:w-[450px] mx-auto border-t-teal-600 dark:border-t-white" />

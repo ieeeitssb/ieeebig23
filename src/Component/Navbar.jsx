@@ -37,28 +37,23 @@ export default function Navbar() {
             <div className="">
               <ul className="hidden font-medium text-black dark:text-white lg:flex">
                 <a href="/">
-                  <li className="ml-10 text-sm uppercase hover:text-teal-600">
+                  <li className="ml-10 text-sm dark:text-white uppercase hover:text-teal-600">
                     Home
                   </li>
                 </a>
                 <a href="#about" scroll={false}>
-                  <li className="ml-10 text-sm uppercase hover:text-teal-600">
+                  <li className="ml-10 text-sm dark:text-white uppercase hover:text-teal-600">
                     About
                   </li>
                 </a>
                 <a href="#events" scroll={false}>
-                  <li className="ml-10 text-sm uppercase hover:text-teal-600">
+                  <li className="ml-10 text-sm dark:text-white uppercase hover:text-teal-600">
                     Events
                   </li>
                 </a>
                 <a href="/" scroll={false}>
-                  <li className="ml-10 text-sm uppercase hover:text-teal-600">
+                  <li className="ml-10 text-sm dark:text-white uppercase hover:text-teal-600">
                     Teams
-                  </li>
-                </a>
-                <a href="https://ieeebig.000webhostapp.com/" scroll={false}>
-                  <li className="ml-10 text-sm uppercase hover:text-teal-600">
-                    Login
                   </li>
                 </a>
               </ul>
@@ -66,7 +61,7 @@ export default function Navbar() {
                 onClick={handleNav}
                 className="text-black dark:text-white lg:hidden cursor-pointer"
               >
-                <AiOutlineMenu size={25} />
+                <AiOutlineMenu className="dark:text-white" size={25} />
               </div>
             </div>
             <div
@@ -101,7 +96,9 @@ export default function Navbar() {
           >
             <div>
               <div className="flex items-center justify-between">
-                <a href="/">IEEEBIG</a>
+                <a href="/" className="dark:text-white">
+                  IEEEBIG
+                </a>
                 <div
                   onClick={handleNav}
                   className="cursor-pointer rounded-full bg-slate-300 p-2 text-black shadow-md shadow-gray-400"
@@ -114,19 +111,24 @@ export default function Navbar() {
             <div className="flex-col py-4 font-[400]">
               <ul className="uppercase">
                 <a href="/">
-                  <li className="py-4 text-sm hover:text-teal-600">Home</li>
+                  <li className="py-4 text-sm hover:text-teal-600 dark:text-white">
+                    Home
+                  </li>
                 </a>
                 <a href="#about" scroll={false}>
-                  <li className="py-4 text-sm hover:text-teal-600">About</li>
+                  <li className="py-4 text-sm hover:text-teal-600 dark:text-white">
+                    About
+                  </li>
                 </a>
                 <a href="/events" scroll={false}>
-                  <li className="py-4 text-sm hover:text-teal-600">Events</li>
+                  <li className="py-4 text-sm hover:text-teal-600 dark:text-white">
+                    Events
+                  </li>
                 </a>
                 <a href="/" scroll={false}>
-                  <li className="py-4 text-sm hover:text-teal-600">Teams</li>
-                </a>
-                <a href="/" scroll={false}>
-                  <li className="py-4 text-sm hover:text-teal-600">Login</li>
+                  <li className="py-4 text-sm hover:text-teal-600 dark:text-white">
+                    Teams
+                  </li>
                 </a>
               </ul>
             </div>

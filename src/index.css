@@ -4,6 +4,12 @@
 html {
   scroll-behavior: smooth;
 }
+.mylabel {
+  @apply font-semibold dark:text-white text-xl;
+}
+.myinput {
+  @apply bg-slate-300 border-teal-500 border-2 focus:bg-slate-100;
+}
 .my-scroll {
   @apply scrollbar scrollbar-track-teal-600;
 }

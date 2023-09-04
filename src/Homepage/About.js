@@ -8,7 +8,7 @@ export default function About() {
       className="w-full min-h-[600px] bg-light dark:bg-dark bg-cover font-oswald p-10"
     >
       <div className="container">
-        <h1 className="text-3xl font-bold text-black dark:text-white text-center mt-10 uppercase tracking-wide mb-3">
+        <h1 className="text-3xl font-bold  dark:text-white text-center mt-10 uppercase tracking-wide mb-3">
           About IEEE BIG
         </h1>
         <hr className="border-t-4 w-[250px] md:w-[300px] mx-auto border-t-teal-600 dark:border-t-white" />

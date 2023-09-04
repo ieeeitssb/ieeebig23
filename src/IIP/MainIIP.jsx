@@ -3,6 +3,7 @@ import JumbotronIIP from "./JumbotronIIP";
 import AboutIIP from "./AboutIIP";
 import TimelineIIP from "./TimelineIIP";
 import Theme from "./Theme";
+import FormIIP from "./FormIIP";
 
 export default function MainIIP() {
   return (
@@ -11,6 +12,7 @@ export default function MainIIP() {
       <AboutIIP />
       <Theme />
       <TimelineIIP />
+      <FormIIP />
     </>
   );
 }
