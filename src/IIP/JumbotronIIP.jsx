@@ -10,12 +10,6 @@ export default function JumbotronIIP() {
         <p className="font-semibold text-slate-600 italic dark:text-slate-200 text-md md:text-3xl font-oswald text-center">
           TechnoSustainable: Empowering a BIG Future.
         </p>
-        <a
-          href="https://ieeebig.000webhostapp.com"
-          className="py-3 px-6 bg-gradient-to-r from-blue-700 to-pink-700 hover:opacity-80 text-white rounded-full mt-5"
-        >
-          Login
-        </a>
       </div>
     </section>
   );

@@ -3,6 +3,7 @@ import Jumbotron from "./JumbotronBCC";
 import AboutBCC from "./AboutBCC";
 import TimelineBCC from "./TimelineBCC";
 import Theme from "./Theme";
+import FormBCC from "./FormBCC";
 export default function MainBCC() {
   return (
     <>
@@ -10,6 +11,7 @@ export default function MainBCC() {
       <AboutBCC />
       <Theme />
       <TimelineBCC />
+      <FormBCC />
     </>
   );
 }
