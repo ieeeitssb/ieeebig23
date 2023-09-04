@@ -46,6 +46,7 @@ export default function FormIIP() {
                 Team Name
               </label>
               <input
+                autoComplete="off"
                 type="text"
                 name="team"
                 className="form-control myinput"
@@ -60,6 +61,7 @@ export default function FormIIP() {
                 Institution Name
               </label>
               <input
+                autoComplete="off"
                 type="text"
                 name="institution"
                 required
@@ -82,6 +84,7 @@ export default function FormIIP() {
                 </label>
                 <input
                   required
+                  autoComplete="off"
                   type="text"
                   name="leader"
                   className="form-control myinput"
@@ -93,6 +96,7 @@ export default function FormIIP() {
                 </label>
                 <input
                   required
+                  autoComplete="off"
                   type="text"
                   name="major-leader"
                   className="form-control myinput"
@@ -104,6 +108,7 @@ export default function FormIIP() {
                 </label>
                 <input
                   required
+                  autoComplete="off"
                   type="text"
                   name="id-leader"
                   className="form-control myinput"
@@ -115,6 +120,7 @@ export default function FormIIP() {
                 </label>
                 <input
                   required
+                  autoComplete="off"
                   type="email"
                   name="email-leader"
                   placeholder="example@gmail.com"
@@ -127,6 +133,7 @@ export default function FormIIP() {
                 </label>
                 <input
                   required
+                  autoComplete="off"
                   type="text"
                   name="contact-leader"
                   placeholder="example@gmail.com"
@@ -147,7 +154,7 @@ export default function FormIIP() {
                   Full Name
                 </label>
                 <input
-                  required
+                  autoComplete="off"
                   type="text"
                   name="member1-name"
                   className="form-control myinput"
@@ -158,7 +165,7 @@ export default function FormIIP() {
                   Major
                 </label>
                 <input
-                  required
+                  autoComplete="off"
                   type="text"
                   name="member1-major"
                   className="form-control myinput"
@@ -169,7 +176,7 @@ export default function FormIIP() {
                   Student ID
                 </label>
                 <input
-                  required
+                  autoComplete="off"
                   type="text"
                   name="member1-id"
                   className="form-control myinput"
@@ -180,7 +187,7 @@ export default function FormIIP() {
                   Email
                 </label>
                 <input
-                  required
+                  autoComplete="off"
                   type="email"
                   name="member1-email"
                   placeholder="example@gmail.com"
@@ -192,6 +199,7 @@ export default function FormIIP() {
                   Contact (Line/WhatsApp)
                 </label>
                 <input
+                  autoComplete="off"
                   type="text"
                   name="member1-contact"
                   placeholder="Optional"
@@ -214,7 +222,7 @@ export default function FormIIP() {
                   Full Name
                 </label>
                 <input
-                  required
+                  autoComplete="off"
                   type="text"
                   name="member2-name"
                   className="form-control myinput"
@@ -225,7 +233,7 @@ export default function FormIIP() {
                   Major
                 </label>
                 <input
-                  required
+                  autoComplete="off"
                   type="text"
                   name="member2-major"
                   className="form-control myinput"
@@ -236,7 +244,7 @@ export default function FormIIP() {
                   Student ID
                 </label>
                 <input
-                  required
+                  autoComplete="off"
                   type="text"
                   name="member2-id"
                   className="form-control myinput"
@@ -247,7 +255,7 @@ export default function FormIIP() {
                   Email
                 </label>
                 <input
-                  required
+                  autoComplete="off"
                   type="email"
                   placeholder="example@gmail.com"
                   className="form-control myinput"
@@ -259,6 +267,7 @@ export default function FormIIP() {
                   Contact (Line/WhatsApp)
                 </label>
                 <input
+                  autoComplete="off"
                   type="text"
                   placeholder="Optional"
                   name="member2-contact"
@@ -282,6 +291,7 @@ export default function FormIIP() {
                   </label>
                   <input
                     required
+                    autoComplete="off"
                     type="url"
                     name="requirement"
                     className="form-control myinput"
@@ -294,6 +304,7 @@ export default function FormIIP() {
                   </label>
                   <input
                     required
+                    autoComplete="off"
                     type="url"
                     name="summary"
                     className="form-control myinput"
