@@ -12,7 +12,7 @@ export default function MainIIP() {
       <AboutIIP />
       <Theme />
       <TimelineIIP />
-      <FormIIP />
+      {/* <FormIIP /> */}
     </>
   );
 }
