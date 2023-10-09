@@ -17,16 +17,16 @@ export default function Event() {
       <div className="px-5 py-20 md:px-32">
         <CardEvent
           logo={logoTemp}
-          title="IEEE Innovation Project (IIP)"
-          description='Description: In this context, IEEE Innovation Project Competition exists as a platform that encourages participants to design and develop new innovations with the theme "TechnoSustainable: Empowering a BIG Future"'
+          title="IEEE Paper Competition (IPC)"
+          description='Description: In this context, IEEE Paper Competition exists as a platform that encourages participants to design and develop new innovations with the theme "TechnoSustainable: Empowering a BIG Future"'
           reverse="false"
           link="/events/iip"
         />
 
         <CardEvent
           logo={logoTemp}
-          title="Business Case Competition (BCC)"
-          description='Description: In this context, IEEE The Business Case Competition exists as a platform that encourages participants to develop innovations and business solutions focused on thematic areas of technology "Technological Solutions for Sustainable Development"'
+          title="Business Plan Competition (BPC)"
+          description='Description: In this context, IEEE The Business Plan Competition exists as a platform that encourages participants to develop innovations and business solutions focused on thematic areas of technology "Technological Solutions for Sustainable Development"'
           reverse="true"
           link="/events/bcc"
         />

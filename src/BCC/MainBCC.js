@@ -11,7 +11,7 @@ export default function MainBCC() {
       <AboutBCC />
       <Theme />
       <TimelineBCC />
-      {/* <FormBCC /> */}
+      <FormBCC />
     </>
   );
 }
