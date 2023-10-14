@@ -24,7 +24,7 @@ export default function AboutBCC() {
           allowed from different majors."
         />
         <Accordion
-          question="what is the impact by joining BPC?"
+          question="What is the impact by joining BPC?"
           answer="It is hoped that various innovative ideas and concepts will emerge
           can overcome the challenges of sustainable development and advance the world's business. competition
           it also aims to inspire the participants in creating technological solutions that are
