@@ -1,6 +1,119 @@
 import React from "react";
 
 export default function FormIIP() {
+  function uploadAbstract(e) {
+    var file = e.target.files[0];
+    var reader = new FileReader();
+    reader.readAsDataURL(e.target.files[0]);
+    reader.onload = function (e) {
+      var rawLog = reader.result.split(",")[1];
+      var dataSend = {
+        dataReq: { data: rawLog, name: file.name, type: file.type },
+        fname: "uploadFilesToGoogleDrive",
+      };
+      document
+        .querySelector(".loading-abstract-ipc")
+        .classList.toggle("hidden");
+      fetch(
+        "https://script.google.com/macros/s/AKfycbxp8epBZsqZqb_welUS62jqNpHPCJzOD59ZTZSuYQnrjArD-mMj6AS-Cr-J_J-ZspqdqQ/exec",
+        { method: "POST", body: JSON.stringify(dataSend) }
+      )
+        .then((res) => res.json())
+        .then((a) => {
+          console.log(a.url);
+          document
+            .querySelector(".loading-abstract-ipc")
+            .classList.toggle("hidden");
+          document
+            .querySelector(".done-abstract-ipc")
+            .classList.toggle("hidden");
+          document.getElementById("abstract_val").value = a.url;
+        })
+        .catch((e) => console.log(e));
+    };
+  }
+  function uploadTwibbon(e) {
+    var file = e.target.files[0];
+    var reader = new FileReader();
+    reader.readAsDataURL(e.target.files[0]);
+    reader.onload = function (e) {
+      var rawLog = reader.result.split(",")[1];
+      var dataSend = {
+        dataReq: { data: rawLog, name: file.name, type: file.type },
+        fname: "uploadFilesToGoogleDrive",
+      };
+      document.querySelector(".loading-twibbon-ipc").classList.toggle("hidden");
+      fetch(
+        "https://script.google.com/macros/s/AKfycbz_xa5lyjWxpdeyInVw9TdyNRezRUZHgpF4G-Mz43rHenfZUYEUlZH1FjPyFhck7pag/exec",
+        { method: "POST", body: JSON.stringify(dataSend) }
+      )
+        .then((res) => res.json())
+        .then((a) => {
+          console.log(a.url);
+          document
+            .querySelector(".loading-twibbon-ipc")
+            .classList.toggle("hidden");
+          document
+            .querySelector(".done-twibbon-ipc")
+            .classList.toggle("hidden");
+          document.getElementById("twibbon_val").value = a.url;
+        })
+        .catch((e) => console.log(e));
+    };
+  }
+  function uploadKTM(e) {
+    var file = e.target.files[0];
+    var reader = new FileReader();
+    reader.readAsDataURL(e.target.files[0]);
+    reader.onload = function (e) {
+      var rawLog = reader.result.split(",")[1];
+      var dataSend = {
+        dataReq: { data: rawLog, name: file.name, type: file.type },
+        fname: "uploadFilesToGoogleDrive",
+      };
+      document.querySelector(".loading-ktm-ipc").classList.toggle("hidden");
+      fetch(
+        "https://script.google.com/macros/s/AKfycbxNEpXctgyxFfOTtHzZZcCQKg1AI9iq4G782HApvansbwETJR0_rLeMkhN5tmATxtlC/exec",
+        { method: "POST", body: JSON.stringify(dataSend) }
+      )
+        .then((res) => res.json())
+        .then((a) => {
+          console.log(a.url);
+          document.querySelector(".loading-ktm-ipc").classList.toggle("hidden");
+          document.querySelector(".done-ktm-ipc").classList.toggle("hidden");
+          document.getElementById("ktm_val").value = a.url;
+        })
+        .catch((e) => console.log(e));
+    };
+  }
+  function uploadFollow(e) {
+    var file = e.target.files[0];
+    var reader = new FileReader();
+    reader.readAsDataURL(e.target.files[0]);
+    reader.onload = function (e) {
+      var rawLog = reader.result.split(",")[1];
+      var dataSend = {
+        dataReq: { data: rawLog, name: file.name, type: file.type },
+        fname: "uploadFilesToGoogleDrive",
+      };
+      document.querySelector(".loading-follow-ipc").classList.toggle("hidden");
+      fetch(
+        "https://script.google.com/macros/s/AKfycbyE1_vei0fDlggrRaR0uKaWOV66WnkhR3g3mdQepsSYnQmg1i7sU2LyDZmN0QjCk8b8/exec",
+        { method: "POST", body: JSON.stringify(dataSend) }
+      )
+        .then((res) => res.json())
+        .then((a) => {
+          console.log(a.url);
+          document
+            .querySelector(".loading-follow-ipc")
+            .classList.toggle("hidden");
+          document.querySelector(".done-follow-ipc").classList.toggle("hidden");
+          document.getElementById("follow_val").value = a.url;
+        })
+        .catch((e) => console.log(e));
+    };
+  }
+
   return (
     <section className="min-h-screen w-full p-5 bg-patternLight dark:bg-patternDark bg-cover bg-fixed">
       <h1 className="dark:text-white text-center text-3xl font-semibold">
@@ -19,7 +132,7 @@ export default function FormIIP() {
             btnLoading.classList.toggle("hidden");
             btnSubmit.classList.toggle("hidden");
             fetch(
-              "https://script.google.com/macros/s/AKfycbwLVthoUJz_9i3rCHOWc76GHhGt-lySINUyJqQkhsZeT3CY7tG07Q9amiCpvFTb-Usp/exec",
+              "https://script.google.com/macros/s/AKfycbzjfaTvTMGNXz108TE2feVydW8zJdcgJw2Y2ufeJk2lBfCkjLlSUK6k2MjbF0c6lfR41g/exec",
               {
                 method: "POST",
                 body: new FormData(document.getElementById("iip-form")),
@@ -279,36 +392,111 @@ export default function FormIIP() {
               <div className="row mb-3">
                 <div className="col">
                   <h1 className="dark:text-white font-bold text-3xl text-center">
-                    Link of requirements
+                    Requirements
                   </h1>
                 </div>
               </div>
               <div className="mb-3 row">
                 <div className="mb-3">
                   <label htmlFor="" className="form-label mylabel">
-                    Link of your drive (Student ID Card, Follow IG IEEEBIG
-                    Proofment, Twibbon IG Proofment.)
+                    Abstract
                   </label>
                   <input
-                    required
-                    autoComplete="off"
-                    type="url"
-                    name="requirement"
+                    type="file"
+                    accept="application/pdf"
+                    id="customFile"
                     className="form-control myinput"
+                    onChange={(e) => uploadAbstract(e)}
                   />
+                  <button
+                    class="btn btn-primary mt-2 hidden loading-abstract-ipc"
+                    type="button"
+                    disabled
+                  >
+                    <span
+                      class="spinner-border spinner-border-sm"
+                      aria-hidden="true"
+                    ></span>
+                    <span role="status"> Uploading...</span>
+                  </button>
+                  <div className="badge bg-primary done-abstract-ipc hidden mt-2">
+                    Done!
+                  </div>
                 </div>
                 <div className="mb-3">
                   <label htmlFor="" className="form-label mylabel">
-                    Link of your drive (Upload your Abstract/Executive
-                    Summary..)
+                    Twibbon
                   </label>
                   <input
-                    required
-                    autoComplete="off"
-                    type="url"
-                    name="summary"
+                    type="file"
+                    accept="application/pdf"
                     className="form-control myinput"
+                    onChange={(e) => uploadTwibbon(e)}
                   />
+                  <button
+                    class="btn btn-primary mt-2 hidden loading-twibbon-ipc"
+                    type="button"
+                    disabled
+                  >
+                    <span
+                      class="spinner-border spinner-border-sm"
+                      aria-hidden="true"
+                    ></span>
+                    <span role="status"> Uploading...</span>
+                  </button>
+                  <div className="badge bg-primary done-twibbon-ipc hidden mt-2">
+                    Done!
+                  </div>
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="" className="form-label mylabel">
+                    KTM
+                  </label>
+                  <input
+                    type="file"
+                    accept="application/pdf"
+                    className="form-control myinput"
+                    onChange={(e) => uploadKTM(e)}
+                  />
+                  <button
+                    class="btn btn-primary mt-2 hidden loading-ktm-ipc"
+                    type="button"
+                    disabled
+                  >
+                    <span
+                      class="spinner-border spinner-border-sm"
+                      aria-hidden="true"
+                    ></span>
+                    <span role="status"> Uploading...</span>
+                  </button>
+                  <div className="badge bg-primary done-ktm-ipc hidden mt-2">
+                    Done!
+                  </div>
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="" className="form-label mylabel">
+                    Following Proofment
+                  </label>
+                  <input
+                    type="file"
+                    accept="application/pdf"
+                    className="form-control myinput"
+                    onChange={(e) => uploadFollow(e)}
+                  />
+                  <button
+                    class="btn btn-primary mt-2 hidden loading-follow-ipc"
+                    type="button"
+                    disabled
+                  >
+                    <span
+                      class="spinner-border spinner-border-sm"
+                      aria-hidden="true"
+                    ></span>
+                    <span role="status"> Uploading...</span>
+                  </button>
+                  <div className="badge bg-primary done-follow-ipc hidden mt-2">
+                    Done!
+                  </div>
                 </div>
               </div>
             </div>
@@ -320,6 +508,10 @@ export default function FormIIP() {
               </div>
             </div>
           </div>
+          <input type="hidden" name="abstract" value="" id="abstract_val" />
+          <input type="hidden" name="twibbon" value="" id="twibbon_val" />
+          <input type="hidden" name="ktm" value="" id="ktm_val" />
+          <input type="hidden" name="follow" value="" id="follow_val" />
           <button
             type="submit"
             className="px-4 py-2 bg-blue-600 text-white rounded-md font-semibold hover:bg-blue-800 focus:ring-2 focus:ring-blue-400 btn-submit"
