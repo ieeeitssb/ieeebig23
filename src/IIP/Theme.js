@@ -14,7 +14,7 @@ export default function Theme() {
     "Smart Cities and Urban Development",
     "Assistive Technologies",
     "Education Technology",
-    ",Environmental Conservation and Sustainability",
+    "Environmental Conservation and Sustainability",
     "Data Analytics and AI for Social Good",
     "Access to Information and Connectivity",
   ];

@@ -24,8 +24,8 @@ export default function AboutIIP() {
           allowed from different majors."
         />
         <Accordion
-          question="what is the impact by joining IPC?"
-          answer="it is hoped that there will be innovations that are efficient, sustainable, and can have a positive impact in driving a better future. This competition is also expected to inspire participants to continue to innovate and contribute in advancing technology towards a brighter future."
+          question="What is the impact by joining IPC?"
+          answer="It is hoped that there will be innovations that are efficient, sustainable, and can have a positive impact in driving a better future. This competition is also expected to inspire participants to continue to innovate and contribute in advancing technology towards a brighter future."
         />
       </div>
     </section>
