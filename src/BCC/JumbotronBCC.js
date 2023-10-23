@@ -12,7 +12,7 @@ export default function JumbotronBCC() {
         </p>
         <a
           className="py-2 px-4 rounded-md bg-blue-600 text-white hover:bg-blue-800 mt-5 font-oswald"
-          href="https://drive.google.com/drive/folders/1xaApUOb1NfSFn9suzOKR9rhggUcKmq_n/"
+          href="https://drive.google.com/file/d/1lIdEplM1Wu45IsxmqKXWMPcVq71x7GXc/view?usp=drivesdk/"
         >
           Guidebook
         </a>
