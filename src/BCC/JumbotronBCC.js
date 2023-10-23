@@ -10,6 +10,12 @@ export default function JumbotronBCC() {
         <p className="font-semibold text-slate-600 italic dark:text-slate-200 text-md md:text-3xl text-center font-oswald">
           Tech Solutions for Sustainable Development
         </p>
+        <a
+          className="py-2 px-4 rounded-md bg-blue-600 text-white hover:bg-blue-800 mt-5 font-oswald"
+          href="https://drive.google.com/drive/folders/1xaApUOb1NfSFn9suzOKR9rhggUcKmq_n/"
+        >
+          Guidebook
+        </a>
       </div>
     </section>
   );
