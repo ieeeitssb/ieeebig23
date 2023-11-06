@@ -117,7 +117,7 @@ export default function FormIIP() {
   return (
     <section className="min-h-screen w-full p-5 bg-patternLight dark:bg-patternDark bg-cover bg-fixed">
       <h1 className="dark:text-white text-center text-3xl font-semibold">
-        Registration Form (All in PDF)
+        Registration Form
       </h1>
       <hr className="mt-5  w-[250px] mx-auto border-t-4 border-t-teal-500" />
       <div className="container mt-3 selection:bg-blue-600 selection:text-white">
@@ -392,7 +392,7 @@ export default function FormIIP() {
               <div className="row mb-3">
                 <div className="col">
                   <h1 className="dark:text-white font-bold text-3xl text-center">
-                    Requirements
+                    Requirements (All in PDF)
                   </h1>
                 </div>
               </div>

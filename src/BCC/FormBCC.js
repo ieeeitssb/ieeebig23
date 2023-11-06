@@ -391,7 +391,7 @@ export default function FormBCC() {
               <div className="row mb-3">
                 <div className="col">
                   <h1 className="dark:text-white font-bold text-3xl text-center">
-                    Requirements
+                    Requirements (All in PDF)
                   </h1>
                 </div>
               </div>
