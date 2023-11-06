@@ -116,7 +116,7 @@ export default function FormBCC() {
   return (
     <section className="min-h-screen w-full p-5 bg-patternLight dark:bg-patternDark bg-cover bg-fixed">
       <h1 className="dark:text-white text-center text-3xl font-semibold">
-        Registration Form
+        Registration Form (All in PDF)
       </h1>
       <hr className="mt-5  w-[250px] mx-auto border-t-4 border-t-teal-500" />
       <div className="container mt-3 selection:bg-blue-600 selection:text-white">
