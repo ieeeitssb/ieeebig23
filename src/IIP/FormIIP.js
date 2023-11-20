@@ -1,6 +1,66 @@
 import React from "react";
 
 export default function FormIIP() {
+  function uploadProof(e) {
+    var file = e.target.files[0];
+    var reader = new FileReader();
+    const loadingProof = document.querySelector(".loading-proof"),
+      doneProof = document.querySelector(".done-proof");
+    reader.readAsDataURL(e.target.files[0]);
+    reader.onload = function (e) {
+      var rawLog = reader.result.split(",")[1];
+      var dataSend = {
+        dataReq: { data: rawLog, name: file.name, type: file.type },
+        fname: "uploadFilesToGoogleDrive",
+      };
+      loadingProof.classList.toggle("hidden");
+      fetch(
+        "https://script.google.com/macros/s/AKfycbyFTFoVcmw2KPv24Gyi0-aQ_lhVditvDqmknrBpG_J5usXSE02LliXZWwLqYtts-leFiA/exec",
+        { method: "POST", body: JSON.stringify(dataSend) }
+      )
+        .then((res) => res.json())
+        .then((a) => {
+          console.log(a.url);
+          loadingProof.classList.toggle("hidden");
+          doneProof.classList.toggle("hidden");
+          setTimeout(() => {
+            doneProof.classList.toggle("hidden");
+          }, 3000);
+          document.getElementById("proof_val").value = a.url;
+        })
+        .catch((e) => console.log(e));
+    };
+  }
+  function uploadPaper(e) {
+    var file = e.target.files[0];
+    var reader = new FileReader();
+    const loadingPaper = document.querySelector(".loading-paper"),
+      donePaper = document.querySelector(".done-paper");
+    reader.readAsDataURL(e.target.files[0]);
+    reader.onload = function (e) {
+      var rawLog = reader.result.split(",")[1];
+      var dataSend = {
+        dataReq: { data: rawLog, name: file.name, type: file.type },
+        fname: "uploadFilesToGoogleDrive",
+      };
+      loadingPaper.classList.toggle("hidden");
+      fetch(
+        "https://script.google.com/macros/s/AKfycbw6diGdsvTlMXPtjREEQVAHVnxzFd1mbzlx37G0ZCNKRk_kzNs1JbaEKZN_4K6MXaSe/exec",
+        { method: "POST", body: JSON.stringify(dataSend) }
+      )
+        .then((res) => res.json())
+        .then((a) => {
+          console.log(a.url);
+          loadingPaper.classList.toggle("hidden");
+          donePaper.classList.toggle("hidden");
+          setTimeout(() => {
+            donePaper.classList.toggle("hidden");
+          }, 3000);
+          document.getElementById("paper_val").value = a.url;
+        })
+        .catch((e) => console.log(e));
+    };
+  }
   return (
     <section className="min-h-screen w-full p-5 bg-patternLight dark:bg-patternDark bg-cover bg-fixed">
       <h1 className="dark:text-white text-center text-3xl font-semibold">
@@ -163,8 +223,22 @@ export default function FormIIP() {
                 <input
                   autoComplete="off"
                   type="file"
+                  accept="application/pdf"
+                  onChange={(e) => uploadProof(e)}
                   className="form-control myinput"
                 />
+                <button
+                  class="btn btn-primary mt-2 loading-proof hidden"
+                  type="button"
+                  disabled
+                >
+                  <span
+                    class="spinner-border spinner-border-sm"
+                    aria-hidden="true"
+                  ></span>
+                  <span role="status"> Uploading...</span>
+                </button>
+                <div className="badge done-proof bg-blue-800 hidden">Done</div>
               </div>
               <div className="mb-3">
                 <label htmlFor="" className="mylabel">
@@ -174,8 +248,24 @@ export default function FormIIP() {
                   autoComplete="off"
                   type="file"
                   className="form-control myinput"
+                  accept="application/pdf"
+                  onChange={(e) => uploadPaper(e)}
                 />
+                <button
+                  class="btn btn-primary mt-2 loading-paper hidden"
+                  type="button"
+                  disabled
+                >
+                  <span
+                    class="spinner-border spinner-border-sm"
+                    aria-hidden="true"
+                  ></span>
+                  <span role="status"> Uploading...</span>
+                </button>
+                <div className="badge done-paper bg-blue-800 hidden">Done</div>
               </div>
+              <input type="hidden" name="proof" value="" id="proof_val" />
+              <input type="hidden" name="paper" value="" id="paper_val" />
               <button
                 type="submit"
                 className="py-2 px-4 bg-blue-600 rounded-md font-oswald hover:bg-blue-800 text-white btnSubmit"
