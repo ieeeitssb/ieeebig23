@@ -102,6 +102,7 @@ export default function FormIIP() {
                   Team Name :{" "}
                 </label>
                 <input
+                  required
                   autoComplete="off"
                   type="text"
                   className="form-control myinput"
@@ -113,6 +114,7 @@ export default function FormIIP() {
                   Leader :{" "}
                 </label>
                 <input
+                  required
                   autoComplete="off"
                   type="text"
                   className="form-control myinput"
@@ -125,6 +127,7 @@ export default function FormIIP() {
                 </label>
                 <input
                   autoComplete="off"
+                  required
                   type="text"
                   className="form-control myinput"
                   placeholder="example@gmail.com"
@@ -137,6 +140,7 @@ export default function FormIIP() {
                 </label>
                 <input
                   autoComplete="off"
+                  required
                   type="text"
                   className="form-control myinput"
                   name="kontak-leader"

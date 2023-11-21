@@ -102,6 +102,7 @@ export default function FormBCC() {
                   Team Name :{" "}
                 </label>
                 <input
+                  required
                   autoComplete="off"
                   type="text"
                   className="form-control myinput"
@@ -114,6 +115,7 @@ export default function FormBCC() {
                 </label>
                 <input
                   autoComplete="off"
+                  required
                   type="text"
                   className="form-control myinput"
                   name="leader"
@@ -125,6 +127,7 @@ export default function FormBCC() {
                 </label>
                 <input
                   autoComplete="off"
+                  required
                   type="text"
                   className="form-control myinput"
                   placeholder="example@gmail.com"
@@ -137,6 +140,7 @@ export default function FormBCC() {
                 </label>
                 <input
                   autoComplete="off"
+                  required
                   type="text"
                   className="form-control myinput"
                   name="kontak-leader"
