@@ -20,7 +20,7 @@ export default function Event() {
           title="IEEE Paper Competition (IPC)"
           description='Description: In this context, IEEE Paper Competition exists as a platform that encourages participants to design and develop new innovations with the theme "TechnoSustainable: Empowering a BIG Future"'
           reverse="false"
-          link="/events/iip"
+          link="/events/ipc"
         />
 
         <CardEvent
@@ -28,7 +28,7 @@ export default function Event() {
           title="Business Plan Competition (BPC)"
           description='Description: In this context, IEEE The Business Plan Competition exists as a platform that encourages participants to develop innovations and business solutions focused on thematic areas of technology "Technological Solutions for Sustainable Development"'
           reverse="true"
-          link="/events/bcc"
+          link="/events/bpc"
         />
 
         <CardEvent

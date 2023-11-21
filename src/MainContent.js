@@ -10,8 +10,8 @@ export default function MainContent() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainHome />} />
-          <Route path="/events/iip" element={<MainIIP />} />
-          <Route path="/events/bcc" element={<MainBCC />} />
+          <Route path="/events/ipc" element={<MainIIP />} />
+          <Route path="/events/bpc" element={<MainBCC />} />
           <Route path="/events/companyfair" element={<MainCF />} />
         </Routes>
       </BrowserRouter>
